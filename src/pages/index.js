@@ -1,22 +1,25 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
+// import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import Navbar from "../components/navbar/navbar"
+import Blog from "../components/blog/blog"
+import BlogRow from "../components/blogs-row/blogs-row"
+
+const blogs = [
+  <Blog title="Dummy Title" content={`The content of your new blog will be the bait that attracts your readers. In this guide, we will cover what content you need to write when you start a blog and the best practices you should follow.`}/>,
+  <Blog title="Dummy Title" content={`The content of your new blog will be the bait that attracts your readers. In this guide, we will cover what content you need to write when you start a blog and the best practices you should follow.`}/>,
+  <Blog title="Dummy Title" content={`The content of your new blog will be the bait that attracts your readers. In this guide, we will cover what content you need to write when you start a blog and the best practices you should follow.`}/>,
+]
 
 const IndexPage = () => (
-  <Layout>
+  <>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
+    <Navbar/>
+    <BlogRow header="Recently Added" content={blogs}/>
+  </>
 )
 
 export default IndexPage

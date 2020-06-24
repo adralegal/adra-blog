@@ -1,0 +1,12 @@
+ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style: none;
+    color: black;
+    overflow: hidden;
+    background-color: #cc0000;
+    padding: 10px 0;
+
+}
