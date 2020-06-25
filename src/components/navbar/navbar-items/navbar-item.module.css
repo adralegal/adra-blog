@@ -1,5 +1,5 @@
 
-li {
+.NavbarItem {
     position: relative;
     overflow: hidden;
     margin: 0;
@@ -8,7 +8,7 @@ li {
 }
 
 
-li::after {
+.NavbarItem::after {
     content: attr(title);
     color: #000000;
     font-weight: 500;
@@ -18,11 +18,40 @@ li::after {
     transition: all 300ms ease;
 }
 
-li:hover::after {
+.NavbarItem:hover::after {
     transform: translateY(-100%);
 }
 
-li:hover {
+.NavbarItem:hover {
+    color: transparent;
+    cursor: pointer;
+}
+
+
+.SidebarItem {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    transition: all 300ms ease;
+    color:black;
+}
+
+
+.SidebarItem::after {
+    content: attr(title);
+    color: #cc0000;
+    font-weight: 500;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: all 300ms ease;
+}
+
+.SidebarItem:hover::after {
+    transform: translateY(-100%);
+}
+
+.SidebarItem:hover {
     color: transparent;
     cursor: pointer;
 }

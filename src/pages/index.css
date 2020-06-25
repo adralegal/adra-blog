@@ -1,0 +1,9 @@
+.FlexRow {
+    display: flex;
+    flex-flow: row;
+}
+
+.FlexColumn {
+    display: flex;
+    flex-flow: column;
+}

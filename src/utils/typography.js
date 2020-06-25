@@ -1,5 +1,4 @@
 import Typography from 'typography';
-import "../css/fonts.css";
 
 const typography = new Typography({
     baseFontSize: "24px",

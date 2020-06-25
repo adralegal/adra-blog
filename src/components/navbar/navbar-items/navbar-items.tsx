@@ -5,13 +5,13 @@ import NavbarItem from "./navbar-item";
 const NavbarItems: FunctionComponent = () => {
     return (
         <ul className={classes.Wrapper}>
-            <NavbarItem>Home</NavbarItem>
-            <NavbarItem>Law</NavbarItem>
-            <NavbarItem>Politics</NavbarItem>
-            <NavbarItem>Judgements &amp; Legislations</NavbarItem>
-            <NavbarItem>Critique</NavbarItem>
-            <NavbarItem>Misc</NavbarItem>
-            <NavbarItem>About</NavbarItem>
+
+            <NavbarItem parent="navbar">Law</NavbarItem>
+            <NavbarItem parent="navbar">Politics</NavbarItem>
+            <NavbarItem parent="navbar">Judgements &amp; Legislations</NavbarItem>
+            <NavbarItem parent="navbar">Critique</NavbarItem>
+            <NavbarItem parent="navbar">Misc</NavbarItem>
+            
         </ul>
     )
 }
