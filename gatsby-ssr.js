@@ -5,3 +5,13 @@
  */
 
 // You can delete this file if you're not using it
+// const React = require("react");
+// const {FirebaseContext, default: Firebase} = require("./src/components/firebase");
+
+// exports.wrapRootElement =  ({element}) => {
+//     return (
+//         <FirebaseContext.Provider value={new Firebase()}>
+//             {element}
+//         </FirebaseContext.Provider>
+//     )
+// }
